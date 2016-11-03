@@ -1,5 +1,5 @@
 
-# DHIS 2
+# JPHES on DHIS 2
 
 DHIS 2 is a flexible information system for data capture, management, validation, analytics and visualization.
 
@@ -25,4 +25,7 @@ mvn install
 cd dhis-web
 mvn install
 </pre>
-[![Build Status](https://travis-ci.org/dhis2/dhis2-core.svg?branch=master)](https://travis-ci.org/dhis2/dhis2-core)
+
+## Project under development
+
+JPHES partner data attribution, running on dhis2.
