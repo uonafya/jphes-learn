@@ -1,12 +1,17 @@
 package org.hisp.dhis.jphes_hierarchy;
 
-import org.hisp.dhis.common.BaseNameableObject;
+
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
+import org.hisp.dhis.common.BaseIdentifiableObject;
+import org.hisp.dhis.common.DxfNamespaces;
 
 /**
  * Created by @author bangadennis on 23/11/16.
  */
 
-public class Partner extends BaseNameableObject
+@JacksonXmlRootElement( localName = "partner", namespace = DxfNamespaces.DXF_2_0 )
+public class Partner extends BaseIdentifiableObject
 {
-    private int id;
+    Partner(){setAutoFields();}
+
 }
