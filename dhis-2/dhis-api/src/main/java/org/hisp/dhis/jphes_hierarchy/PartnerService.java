@@ -1,8 +1,5 @@
 package org.hisp.dhis.jphes_hierarchy;
 
-import org.hisp.dhis.option.Option;
-import org.hisp.dhis.option.OptionSet;
-
 import java.util.List;
 
 /**
