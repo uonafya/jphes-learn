@@ -355,6 +355,12 @@
     <property name="cacheable" value="true" />
   </bean>
 
+  <bean id="org.hisp.dhis.jphes_hierarchy.PartnerStore" class="org.hisp.dhis.jphes_hierarchy.hibernate.HibernatePartnerStore">
+    <property name="clazz" value="org.hisp.dhis.jphes_hierarchy.Partner" />
+    <property name="sessionFactory" ref="sessionFactory" />
+    <property name="cacheable" value="true" />
+  </bean>
+
   <bean id="org.hisp.dhis.option.OptionStore" class="org.hisp.dhis.option.hibernate.HibernateOptionStore">
     <property name="clazz" value="org.hisp.dhis.option.Option" />
     <property name="sessionFactory" ref="sessionFactory" />
