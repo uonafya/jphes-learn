@@ -1,4 +1,6 @@
-package org.uonbi.jphes;
+package org.uonbi.jphes.partner.action;
+
+
 
 /**
  * Created by bangadennis on 06/12/16.

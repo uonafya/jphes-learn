@@ -1,0 +1,5 @@
+<h3>Partners #openHelp( "partners" )</h3>
+
+<ul class="introList">
+    #introListImgItem( "partner.action" "user_by_orgunit" "user" )
+</ul>
