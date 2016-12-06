@@ -10,24 +10,18 @@
     <version>2.21</version>
   </parent>
 
-  <groupId>org.uonbi.jphes</groupId>
   <artifactId>jphes-web-app</artifactId>
   <packaging>war</packaging>
-  <version>1.0-SNAPSHOT</version>
   <name>JPHES Web App</name>
 
   <build>
     <finalName>jphes-web-app</finalName>
   </build>
 
+  <description>This is the JPHES web portal to perform partner attribution.</description>
+
   <dependencies>
 
-    <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>javax.servlet-api</artifactId>
-    </dependency>
-
-    <!-- DHIS -->
 
     <dependency>
       <groupId>org.hisp.dhis</groupId>
@@ -46,11 +40,13 @@
     <dependency>
       <groupId>org.hisp.dhis</groupId>
       <artifactId>dhis-web-api</artifactId>
+      <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>org.hisp.dhis</groupId>
       <artifactId>dhis-service-core</artifactId>
     </dependency>
+
   </dependencies>
 
 

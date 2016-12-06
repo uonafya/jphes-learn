@@ -10,7 +10,7 @@
 
     <!-- JPHES Web APP -->
 
-    <action name="index" class="org.uonbi.jphes.partner.action.NoAction">
+    <action name="index" class="org.hisp.dhis.partner.action.NoAction">
       <result name="success" type="velocity">/main.vm</result>
       <param name="page">/jphes-web-app/index.vm</param>
       <param name="menu">/jphes-web-app/menu.vm</param>
