@@ -1,5 +1,5 @@
 <h3>Partners #openHelp( "partners" )</h3>
 
 <ul class="introList">
-    #introListImgItem( "index.action" "user_by_orgunit" "user" )
+    #introListImgItem( "index.action" "Partner" "user" )
 </ul>
