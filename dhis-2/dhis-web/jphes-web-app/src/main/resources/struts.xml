@@ -24,5 +24,17 @@
       <!--<param name="requiredAuthorities">F_JPHES_LIST_PARTNER</param>-->
     </action>
 
+    <action name="index" class="org.hisp.dhis.partner.action.NoAction">
+      <result name="success" type="velocity">/main.vm</result>
+      <param name="page">/jphes-web-app/index.vm</param>
+      <param name="menu">/jphes-web-app/menu.vm</param>
+    </action>
+    <action name="showAddRoleForm" class="org.hisp.dhis.user.action.NoAction">
+      <result name="success" type="velocity">/main.vm</result>
+      <param name="page">/dhis-web-maintenance-user/addRoleForm.vm</param>
+      <param name="javascripts">../dhis-web-commons/oust/oust.js,javascript/role.js</param>
+      <param name="anyAuthorities">F_USERROLE_PUBLIC_ADD, F_USERROLE_PRIVATE_ADD</param>
+    </action>
+
   </package>
 </struts>
