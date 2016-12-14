@@ -24,7 +24,7 @@
       <table width="100%">
         <tr>
           <td>#filterDiv( "allPartner" )</td>
-          <td colspan="4" style="text-align:right"><input type="button" value="$i18n.getString( 'add_new' )" onclick="window.location.href=''"/></td>
+          <td colspan="4" style="text-align:right"><input type="button" value="$i18n.getString( 'add_new' )" onclick="window.location.href='showAddPartnerForm.action'"/></td>
         </tr>
       </table>
       <table class="listTable" id="listTable">

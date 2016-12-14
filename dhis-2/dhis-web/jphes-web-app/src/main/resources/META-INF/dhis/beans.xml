@@ -9,5 +9,10 @@
     <property name="userService" ref="org.hisp.dhis.user.UserService" />
   </bean>
 
+  <bean id="org.hisp.dhis.partner.action.AddPartnerAction" class="org.hisp.dhis.partner.action.AddPartnerAction" scope="prototype" >
+    <property name="partnerService" ref="org.hisp.dhis.jphes_hierarchy.PartnerService" />
+    <property name="userService" ref="org.hisp.dhis.user.UserService" />
+  </bean>
+
 
 </beans>
