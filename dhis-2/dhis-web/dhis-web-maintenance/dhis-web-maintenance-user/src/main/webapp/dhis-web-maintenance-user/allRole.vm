@@ -15,7 +15,7 @@
     <li data-enabled="canUpdate"><a data-target-fn="showUpdateRoleForm"><i class="fa fa-edit"></i>&nbsp;&nbsp;$i18n.getString( "edit" )</a></li>
     <li data-enabled="canDelete"><a data-target-fn="removeRole"><i class="fa fa-trash-o"></i>&nbsp;&nbsp;$i18n.getString( "remove" )</a></li>
     <li><a data-target-fn="showRoleDetails"><i class="fa fa-info-circle"></i>&nbsp;&nbsp;$i18n.getString( "show_details" )</a></li>
-  </ul>
+  </ul>00
 </div>
 
 <table style="width:100%">

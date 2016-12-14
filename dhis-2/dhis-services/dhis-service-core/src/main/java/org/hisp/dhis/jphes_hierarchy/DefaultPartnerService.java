@@ -47,6 +47,26 @@ public class DefaultPartnerService implements PartnerService
         return partnerStore.getAllPartners();
     }
 
+    @Override public List<Partner> getPartnersBetween( int first, int max )
+    {
+        return partnerStore.getAllOrderedName( first, max );
+    }
+
+    @Override public List<Partner> getPartnersBetweenByName( String name, int first, int max )
+    {
+        return partnerStore.getAllLikeName( name, first, max );
+    }
+
+    @Override public int getPartnerCount()
+    {
+        return partnerStore.getCount();
+    }
+
+    @Override public int getPartnerCountByName( String name )
+    {
+        return partnerStore.getCountLikeName( name );
+    }
+
     @Override public void updatePartner( Partner partner )
     {
         partnerStore.update( partner );

@@ -16,5 +16,13 @@
       <param name="menu">/jphes-web-app/menu.vm</param>
     </action>
 
+    <action name="allPartner" class="org.hisp.dhis.partner.action.GetPartnerListAction">
+      <result name="success" type="velocity">/main.vm</result>
+      <param name="page">/dhis-web-maintenance-user/allPartner.vm</param>
+      <param name="menu">/dhis-web-maintenance-user/menu.vm</param>
+      <param name="javascripts">javascript/partner.js,javascript/filterTable.js</param>
+      <param name="requiredAuthorities">F_JPHES_LIST_PARTNER</param>
+    </action>
+
   </package>
 </struts>

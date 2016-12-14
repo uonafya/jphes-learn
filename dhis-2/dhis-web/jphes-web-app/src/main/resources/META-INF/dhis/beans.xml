@@ -4,5 +4,10 @@
 
   <bean id="org.hisp.dhis.partner.action.NoAction" class="org.hisp.dhis.partner.action.NoAction" scope="prototype" />
 
+  <bean id="org.hisp.dhis.partner.action.GetPartnerListAction" class="org.hisp.dhis.partner.action.GetPartnerListAction" scope="prototype" >
+    <property name="partnerService" ref="org.hisp.dhis.jphes_hierarchy.PartnerService" />
+    <property name="userService" ref="org.hisp.dhis.user.UserService" />
+  </bean>
+
 
 </beans>

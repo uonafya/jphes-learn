@@ -21,6 +21,14 @@ public interface PartnerService
 
     List<Partner> getAllPartners();
 
+    List<Partner> getPartnersBetween( int first, int max );
+
+    List<Partner> getPartnersBetweenByName( String name, int first, int max );
+
+    int getPartnerCount();
+
+    int getPartnerCountByName(String name);
+
     void updatePartner(Partner partner);
 
     void deletePartner(Partner partner);
