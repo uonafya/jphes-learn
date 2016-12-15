@@ -13,6 +13,6 @@ import org.hisp.dhis.common.DxfNamespaces;
 public class Partner extends BaseIdentifiableObject
 {
 
-    public Partner(){setAutoFields();}
+    //Inherits all attributes
 
 }

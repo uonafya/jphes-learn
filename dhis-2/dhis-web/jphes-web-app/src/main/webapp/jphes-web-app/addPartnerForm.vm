@@ -1,7 +1,5 @@
 <h3>Add Partner</h3>
 
-#sharingCreateNotification( "partner" )
-
 <form id="addPartnerForm" name="addPartnerForm" action="addPartner.action" method="post" class="inputForm">
   <table>
     <col style="width: 120px"/>

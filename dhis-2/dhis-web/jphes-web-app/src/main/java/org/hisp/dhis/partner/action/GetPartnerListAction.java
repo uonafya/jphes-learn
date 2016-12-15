@@ -63,7 +63,7 @@ public class GetPartnerListAction extends ActionPagingSupport<Partner>
         {
             this.paging = createPaging( partnerService.getPartnerCountByName(key));
 
-            partners = partnerService.getPartnersBetweenByName( key, paging.getStartPos(), paging.getPageSize() );
+            partners = partnerService.getPartnersBetweenByName(key, paging.getStartPos(), paging.getPageSize() );
         }
         else
         {

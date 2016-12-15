@@ -1,6 +1,8 @@
 package org.hisp.dhis.partner.action;
 
+import com.ctc.wstx.util.StringUtil;
 import com.opensymphony.xwork2.Action;
+import org.apache.commons.lang.StringUtils;
 import org.hisp.dhis.jphes_hierarchy.Partner;
 import org.hisp.dhis.jphes_hierarchy.PartnerService;
 import org.hisp.dhis.user.UserService;
@@ -54,9 +56,9 @@ public class AddPartnerAction implements Action
     {
         Partner partner = new Partner();
 
-        partner.setName( name );
-        partner.setCode( code );
-        partner.setDisplayName( displayName );
+        partner.setName( StringUtils.trimToNull( name ) );
+        partner.setCode( StringUtils.trimToNull( code ) );
+        partner.setDisplayName( StringUtils.trimToNull( displayName) );
 
         partnerService.savePartner( partner );
 
