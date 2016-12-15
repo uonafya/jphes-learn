@@ -29,5 +29,10 @@
       <param name="page">/jphes-web-app/addPartnerForm.vm</param>
     </action>
 
+    <action name="addPartner" class="org.hisp.dhis.partner.action.AddPartnerAction">
+      <result name="success" type="redirect">allPartner.action?currentPage=${keyCurrentPage}&amp;key=${keyCurrentKey}</result>
+      <result name="error" type="redirect">showAddPartnerForm.action</result>
+    </action>
+
   </package>
 </struts>

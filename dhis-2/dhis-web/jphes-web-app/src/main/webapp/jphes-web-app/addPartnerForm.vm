@@ -25,11 +25,6 @@
     </tr>
 
     <tr>
-      <td><label for="description">$i18n.getString( "description" )</label></td>
-      <td colspan="3"><input type="text" id="description" name="description"></td>
-    </tr>
-
-    <tr>
       <td><label for="displayName">Display Name</label></td>
       <td colspan="3"><input type="text" id="displayName" name="displayName"></td>
     </tr>

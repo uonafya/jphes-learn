@@ -12,6 +12,7 @@ import org.hisp.dhis.common.DxfNamespaces;
 @JacksonXmlRootElement( localName = "partner", namespace = DxfNamespaces.DXF_2_0 )
 public class Partner extends BaseIdentifiableObject
 {
-    Partner(){setAutoFields();}
+
+    public Partner(){setAutoFields();}
 
 }

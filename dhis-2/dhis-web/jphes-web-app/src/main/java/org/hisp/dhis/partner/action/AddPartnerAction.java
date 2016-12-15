@@ -44,12 +44,6 @@ public class AddPartnerAction implements Action
 
     public void setDisplayName(String displayName){ this.displayName = displayName; }
 
-    private String description;
-
-    public void setDescription( String description )
-    {
-        this.description = description;
-    }
 
     // -------------------------------------------------------------------------
     // Action implementation
@@ -58,8 +52,14 @@ public class AddPartnerAction implements Action
 
     @Override public String execute() throws Exception
     {
+        Partner partner = new Partner();
 
+        partner.setName( name );
+        partner.setCode( code );
+        partner.setDisplayName( displayName );
 
-        return null;
+        partnerService.savePartner( partner );
+
+        return SUCCESS;
     }
 }
